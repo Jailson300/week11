@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+.navbar{
+    background-color: #1db954;
+    display:flex;
+    top:0;
+    gap: 40px;
+    justify-content: center;
+    padding: 15px 0;
+    top: 0;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+.navbar a:hover{
+    color: black;
+    border-radius: 6px;
+}
+.cards{
+    margin: 20px;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 10px;
+    width: 140px;
+    max-width: 30%;
+}
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    border:2px solid grey;
+    height: 140px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card p {
+    font-size: 14px;
+    color: rgb(173, 172, 169);
+    overflow-wrap: break-word;
+  }
+  
+.image:hover {
+    transform: scale(1.05);
+}
+.image img{
+        width: 165px;         
+        height: 165px;
+        border-radius: 50%;
+        object-fit: cover; 
+        border: 2px solid #fff; 
+      } 
+.image p{
+    font-size: 14px;
+    color: rgb(173, 172, 169);
+}    
+footer {
+    background-color: #1db954;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cards {
+      justify-content: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .image img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+    }
+  }
+  
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+        <a href="#trending">Trending</a>
+        <a href="#artists">Artists</a>
+        <a href="#albums">Albums</a>
+        <a href="#radio">Radio</a>
+        <a href="#charts">Charts</a>
+      </div>
+      <main>
+        <div class="main">
+            <div class="section" id="trending">
+                <h2>Trending Songs</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="Trending1.jpeg">
+                        <h4 >Pal Pal</h4>
+                        <p>Afusic, AliSoomroMusic</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending2.jpeg">
+                        <h4>Phele Bhi Main</h4>
+                        <p>Vishal Mishra,Raj Shekhar</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending3.jpeg">
+                        <h4>Heeriye(feat.Arjit Singh)</h4>
+                        <p>Jasleen Royal,Arjit Singh ,Dulquerb Salmaan</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending4.jpeg">
+                        <h4>Apna Bana le</h4>
+                        <p>Sachin-Jigar,Arjit Singh,Amitabh Bhattacharya</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending5.jpeg">
+                        <h4> Jo Tum Mere Ho</h4>
+                        <p>Anuv Jain</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending6.jpeg">
+                        <h4>Tujhe Kitna Chahne Lage</h4>
+                        <p>Arjit Singh,Mithoon</p>
+                    </div>
+                    <div class="card">
+                        <img src="Trending7.jpeg">
+                        <h4>Janiye(from the Netflix Film"Chor Nikal Ke Bhaga")
+                        </h4>
+                        <p>Vishal Mishra ,Rashmeet Kaur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="artists">
+                <h2>Popular Artists</h2>
+                <div class="cards">
+                    <div class="image">
+                        <img src="PopularA1.jpeg">
+                        <h4>Pritam</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA2.jpeg">
+                        <h4>Arjit Singh</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA3.jpeg">
+                        <h4>A.R.Rahman</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA4.jpeg">
+                        <h4>Sachin-Jigar</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA5.jpeg">
+                        <h4>Vishal-Shekar</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA6.jpeg">
+                        <h4>Atif Aslam</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="PopularA7.jpg">
+                        <h4>Anirudh Ravichander</h4>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="albums">
+                <h2>Popular albums and singles</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="popular1.JPG">
+                        <h4>Yeh Jawaani Hai Deewani</h4>
+                        <p>Film 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular2.JPG">
+                        <h4>Aashiqui 2</h4>
+                        <p>Mithoon,Ankit Tiwari.Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular3.JPG">
+                        <h4>Young G.O.A.T</h4>
+                        <p>Cheema Y ,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular4.JPG">
+                        <h4>
+                            Sanam Teri Kasam(Original Motion Picture Soundtrack)
+                        </h4>
+                        <p>Himesh Reshammiya.Sameer.Anjaan.Subrat Sinha</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular5.JPG">
+                        <h4>Glory</h4>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular6.JPG">
+                        <h4>Raanjhan(From "Do Patti")</h4>
+                        <p>Sachet-Parampara.Raanjhan(From "Do Patti")</p>
+                    </div>
+                    <div class="card">
+                        <img src="popular7.JPG">
+                        <h4>Jab We Met</h4>
+                        <p>Pritam.Irshad Kamil.sandesh Shandilya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="radio">
+                <h2>Popular radio</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="radio1.JPG">
+                        <p>With Sachin-Jigar, Vishal-Shekhar, Amit Trivedi and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio2.JPG">
+                        <p>With A.R. Rahman, Vishal-Shekhar, Ajay-Atul and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio3.JPG">
+                        <p>With Armaan Malik, Mohit Chauhan, Mustafa Zahid and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio4.JPG">
+                        <p>With Anirudh Ravichander, Santhosh Narayanan, Yuvan Shankar Raja and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio5.JPG">
+                        <p>With Karan Aujla, Shubh, Sidhu Moose Wala and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio6.JPG">
+                        <p>With Badshah, Diljit Dosanjh, Harrdy Sandhu and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="radio7.JPG">
+                        <p>With Asha Bhosle, Abhijeet, Jatin-Lalit and more</p>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+      </main>
+      <div class="section" id="charts">
+        <h2>Featured Charts</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="1.jpg">
+            <p>Your weekly update of the most played tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="2.jpg">
+            <p>Your weekly update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="3.jpg">
+            <p>Your daily update of the most plsyed tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="4.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="5.jpg">
+            <p>Your daily update of the most viral tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="6.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>Designed by Boinao Hemam</p>
+        <p style="color: dimgray;">BCA, 2nd Year (4th Semester)<br>
+            Roll no:BC2094<br>NIELIT, IMPHAL</p>
+    </footer>
+    
+</body>
+</html>
